@@ -2,7 +2,7 @@ package com.TigersIter2.managers;
 
 import com.TigersIter2.entities.*;
 import com.TigersIter2.items.TakeableItem;
-import com.TigersIter2.items.Weapon;
+import com.TigersIter2.items.RangedWeapon;
 import com.TigersIter2.location.LocationConverter;
 import com.TigersIter2.views.FooterView;
 
@@ -328,6 +328,10 @@ public class AvatarNPCInteract implements ActionListener{
         npcList.add(v);
 
     }
+
+
+        // This will not actually be here, just for testing
+        npcList.get(0).getInventory().addItem(new RangedWeapon("Bow", 5, 10, 0));
 
     public List<NPC> getNpcList(){
         return npcList;

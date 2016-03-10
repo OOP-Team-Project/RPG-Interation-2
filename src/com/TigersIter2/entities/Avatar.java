@@ -218,4 +218,7 @@ public class Avatar extends Entity{
         System.out.println("Taking damage");
     }
 
+    //added this getter method to get the player stats for item manager -- Breanna
+    public PlayerStats getPlayerStats() { return stats; }
+
 }
